@@ -23,7 +23,7 @@ export default function CapabilitiesPage() {
         intro="It is rightly said that to get quality output, we need to give a quality input. We invest continuously in machines from Deckel-Maho Gildemeister (Germany), Tsugami (Japan) and LMW (India), with a team trained across both Fanuc and Siemens controllers."
       />
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <div className="flex flex-col gap-24 md:gap-32">
             {company.capabilities.map((cap, i) => {
@@ -40,7 +40,7 @@ export default function CapabilitiesPage() {
               );
               const text = (
                 <div key="text" className="lg:col-span-5">
-                  <span className="label text-graphite tnum">0{i + 1}</span>
+                  <span className="label text-gold tnum">0{i + 1}</span>
                   <h2 className="mt-4 font-display font-semibold text-3xl md:text-4xl text-ink leading-tight">
                     {cap.name}
                   </h2>
@@ -75,7 +75,7 @@ export default function CapabilitiesPage() {
         </Container>
       </section>
 
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-20 md:py-28 bg-mist">
         <Container>
           <Reveal>
             <SectionHeading
@@ -95,7 +95,7 @@ export default function CapabilitiesPage() {
         </Container>
       </section>
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <Reveal>
             <SectionHeading

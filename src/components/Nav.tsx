@@ -56,7 +56,7 @@ export function Nav() {
 
         <Link
           href="/contact"
-          className="hidden lg:inline-flex items-center gap-2 border border-ink px-5 py-2.5 label text-ink hover:bg-ink hover:text-paper transition-colors"
+          className="hidden lg:inline-flex items-center gap-2 rounded-full bg-signal border border-signal px-6 py-2.5 label text-white hover:bg-signal-bright hover:border-signal-bright transition-colors"
         >
           Get a Quote
         </Link>
@@ -87,7 +87,7 @@ export function Nav() {
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="mt-8 inline-flex items-center justify-center border border-ink px-5 py-4 label text-ink"
+              className="mt-8 inline-flex items-center justify-center rounded-full bg-signal px-5 py-4 label text-white"
             >
               Get a Quote
             </Link>

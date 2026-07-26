@@ -23,7 +23,7 @@ const ITEMS = [
 
 export function IndustriesStrip() {
   return (
-    <section className="py-28 md:py-36 bg-white">
+    <section className="py-24 md:py-32 bg-mist">
       <Container>
         <Reveal className="mb-16">
           <p className="label text-signal">Industries</p>

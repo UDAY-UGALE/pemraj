@@ -22,7 +22,7 @@ export default function AboutPage() {
         intro="Established in 1983, Pemraj Industries is a strategic manufacturer and supplier of high precision and quality critical CNC machined components and assemblies, specialising in CNC turning and CNC turn-mill — based in the industrial belt of Pune, India."
       />
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-14">
             <Reveal className="lg:col-span-5">
@@ -66,7 +66,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-20 md:py-28 bg-mist">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16">
             <Reveal>
@@ -85,7 +85,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="Values" title="What runs the shop floor." className="mb-16" />
@@ -93,7 +93,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-line">
             {company.values.map((v, i) => (
               <Reveal key={v.name} delay={i * 0.06} className="bg-paper p-8">
-                <span className="label text-graphite tnum">0{i + 1}</span>
+                <span className="label text-gold tnum">0{i + 1}</span>
                 <h3 className="mt-4 font-display font-semibold text-xl text-ink">{v.name}</h3>
                 <p className="mt-3 text-graphite text-[14px] leading-relaxed">{v.body}</p>
               </Reveal>

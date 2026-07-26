@@ -49,7 +49,7 @@ export default function IndustriesPage() {
         intro="Our components go into extremely critical and demanding industries. Our customers — OEMs and lower-tier manufacturers located all around the world — are high-technology businesses operating in dynamic and competitive markets."
       />
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <div className="flex flex-col gap-24 md:gap-32">
             {SECTORS.map((s, i) => {
@@ -66,7 +66,7 @@ export default function IndustriesPage() {
               );
               const text = (
                 <div key="text" className="lg:col-span-5">
-                  <span className="label text-graphite tnum">0{i + 1}</span>
+                  <span className="label text-gold tnum">0{i + 1}</span>
                   <h2 className="mt-4 font-display font-semibold text-3xl md:text-4xl text-ink leading-tight">
                     {s.name}
                   </h2>

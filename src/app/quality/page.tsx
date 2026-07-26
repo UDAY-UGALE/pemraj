@@ -37,7 +37,7 @@ export default function QualityPage() {
         intro="Quality checks are built into every step of manufacturing — from procuring raw material to dispatching the final product — not inspected in at the end."
       />
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-14 items-center">
             <Reveal className="lg:col-span-6">
@@ -87,7 +87,7 @@ export default function QualityPage() {
         </Container>
       </section>
 
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-20 md:py-28 bg-mist">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="Quality Control Documentation" title="Documented at every stage." className="mb-14" />
@@ -95,7 +95,7 @@ export default function QualityPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-line">
             {company.qualityDocs.map((d, i) => (
               <Reveal key={d.stage} delay={i * 0.06} className="bg-white p-8">
-                <span className="label text-graphite tnum">0{i + 1}</span>
+                <span className="label text-gold tnum">0{i + 1}</span>
                 <h3 className="mt-4 font-display font-semibold text-lg text-ink">{d.stage}</h3>
                 <p className="mt-2.5 text-graphite text-[14px] leading-relaxed">{d.docs}</p>
               </Reveal>
@@ -104,7 +104,7 @@ export default function QualityPage() {
         </Container>
       </section>
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <Reveal>
             <SectionHeading
@@ -137,7 +137,7 @@ export default function QualityPage() {
         </Container>
       </section>
 
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-20 md:py-28 bg-mist">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="Materials" title="Any material, fully traceable." className="mb-6" />

@@ -3,6 +3,7 @@ import { Archivo, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { FloatingContact } from "@/components/FloatingContact";
 
 const archivo = Archivo({
   variable: "--font-archivo",
@@ -46,6 +47,7 @@ export default function RootLayout({
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <FloatingContact />
       </body>
     </html>
   );

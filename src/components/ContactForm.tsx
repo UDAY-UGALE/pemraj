@@ -45,7 +45,7 @@ export function ContactForm() {
       <div className="flex items-center gap-5">
         <button
           type="submit"
-          className="inline-flex items-center gap-2 bg-ink text-paper px-7 py-4 label hover:bg-signal transition-colors"
+          className="inline-flex items-center gap-2 rounded-full bg-signal text-white px-7 py-4 label hover:bg-navy transition-colors"
         >
           Send via Email
         </button>

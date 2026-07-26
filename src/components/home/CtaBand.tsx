@@ -5,7 +5,7 @@ import { company } from "@/content/company";
 
 export function CtaBand() {
   return (
-    <section className="py-28 md:py-36">
+    <section className="py-24 md:py-32">
       <Container>
         <Reveal className="border-t border-line pt-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
@@ -19,7 +19,7 @@ export function CtaBand() {
             <div className="lg:col-span-4 flex flex-col items-start lg:items-end gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-ink text-paper px-7 py-4 label hover:bg-signal transition-colors"
+                className="inline-flex items-center gap-2 rounded-full bg-signal text-white px-7 py-4 label hover:bg-navy transition-colors"
               >
                 Get a Quote
               </Link>

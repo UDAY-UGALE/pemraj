@@ -4,17 +4,22 @@
   /* Ink & paper — warm, not clinical white/black */
   --color-paper: #f6f4ef;
   --color-white: #ffffff;
+  --color-mist: #eef2f6;
   --color-ink: #12151a;
-  --color-navy: #0d1c33;
-  --color-navy-deep: #081226;
+  --color-navy: #0c3049;
+  --color-navy-deep: #062430;
   --color-graphite: #565c63;
   --color-steel: #8b9199;
   --color-line: #dcd8cd;
   --color-line-dark: #24314a;
 
-  /* single restrained industrial blue — used as signal, never glow */
-  --color-signal: #1c4fa0;
-  --color-signal-bright: #2f6fd6;
+  /* brand blue, sampled directly from the Pemraj wordmark */
+  --color-signal: #0864a9;
+  --color-signal-bright: #2f86d6;
+
+  /* warm accent — antique brass, echoes the brass components we actually machine */
+  --color-gold: #a9762c;
+  --color-gold-deep: #8a5f1f;
 
   --font-display: var(--font-archivo);
   --font-body: var(--font-archivo);
@@ -24,6 +29,7 @@
 @theme inline {
   --color-paper: var(--color-paper);
   --color-white: var(--color-white);
+  --color-mist: var(--color-mist);
   --color-ink: var(--color-ink);
   --color-navy: var(--color-navy);
   --color-navy-deep: var(--color-navy-deep);
@@ -33,6 +39,8 @@
   --color-line-dark: var(--color-line-dark);
   --color-signal: var(--color-signal);
   --color-signal-bright: var(--color-signal-bright);
+  --color-gold: var(--color-gold);
+  --color-gold-deep: var(--color-gold-deep);
 
   --font-display: var(--font-display);
   --font-body: var(--font-body);

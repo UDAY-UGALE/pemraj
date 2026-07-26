@@ -1,18 +1,16 @@
-const NAME = "PEMRAJ";
+import Image from "next/image";
 
-export function Logo({ dark = false }: { dark?: boolean }) {
-  const line = dark ? "border-white/35" : "border-navy/30";
-  const text = dark ? "text-white" : "text-ink";
-  const sub = dark ? "text-white/60" : "text-graphite";
-
+export function Logo({ dark = false, className = "" }: { dark?: boolean; className?: string }) {
   return (
-    <span className="inline-flex flex-col leading-none select-none">
-      <span
-        className={`border ${line} px-3 py-1.5 font-display font-semibold tracking-[0.22em] text-[15px] ${text}`}
-      >
-        {NAME}
-      </span>
-      <span className={`label mt-1 text-center ${sub}`}>Industries</span>
+    <span className={`inline-block relative h-[42px] w-[130px] align-middle ${className}`}>
+      <Image
+        src={dark ? "/images/logo-white.png" : "/images/logo.png"}
+        alt="Pemraj Industries"
+        fill
+        sizes="150px"
+        priority
+        className="object-contain object-left"
+      />
     </span>
   );
 }

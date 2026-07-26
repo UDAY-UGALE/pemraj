@@ -21,7 +21,7 @@ export default function LeadershipPage() {
     <>
       <PageHeader eyebrow="Leadership" title="Founded in 1983. Still hands-on." />
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <Reveal className="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-10 items-start">
             <div className="lg:col-span-4">

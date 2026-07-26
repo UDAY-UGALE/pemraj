@@ -20,7 +20,7 @@ export default function ContactPage() {
         intro="Tell us the material, quantity and tolerance and we'll come back with a quote — or reach our team directly below."
       />
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <Reveal className="lg:col-span-7">
@@ -47,7 +47,7 @@ export default function ContactPage() {
         </Container>
       </section>
 
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-20 md:py-28 bg-mist">
         <Container>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
             {Object.values(company.offices).map((office) => (

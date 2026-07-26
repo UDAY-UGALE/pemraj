@@ -42,7 +42,7 @@ export default function ProductsPage() {
         intro="A cross-section of the components we machine — export fittings and assemblies, defence components with full traceability, and precision polygon-turned parts."
       />
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="Export" title="Fittings & assemblies for global OEMs." className="mb-14" />
@@ -51,7 +51,7 @@ export default function ProductsPage() {
         </Container>
       </section>
 
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-20 md:py-28 bg-mist">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="Defence" title="Full traceability, every batch." className="mb-14" />
@@ -60,7 +60,7 @@ export default function ProductsPage() {
         </Container>
       </section>
 
-      <section className="py-24 md:py-32">
+      <section className="py-20 md:py-28">
         <Container>
           <Reveal>
             <SectionHeading
