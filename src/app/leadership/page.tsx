@@ -15,7 +15,7 @@ export default function LeadershipPage() {
     <>
       <PageHeader eyebrow="Leadership" title="Founded in 1983. Still hands-on." />
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
           <div className="flex flex-col gap-20">
             {company.leadership.map((person, i) => {
@@ -69,7 +69,7 @@ export default function LeadershipPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-mist">
+      <section className="py-14 md:py-20 bg-mist">
         <Container>
           <Reveal>
             <p className="label text-signal">Offices</p>

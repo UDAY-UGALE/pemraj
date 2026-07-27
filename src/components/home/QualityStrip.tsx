@@ -6,7 +6,7 @@ import { company } from "@/content/company";
 
 export function QualityStrip() {
   return (
-    <section className="py-24 md:py-32 bg-navy text-white">
+    <section className="py-14 md:py-20 bg-navy text-white">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-14 items-center">
           <Reveal className="lg:col-span-6">

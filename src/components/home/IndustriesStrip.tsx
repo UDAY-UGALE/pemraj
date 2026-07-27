@@ -27,9 +27,9 @@ const ITEMS = [
 
 export function IndustriesStrip() {
   return (
-    <section className="py-24 md:py-32 bg-mist">
+    <section className="py-14 md:py-20 bg-mist">
       <Container>
-        <Reveal className="mb-16">
+        <Reveal className="mb-10">
           <p className="label text-signal">Industries</p>
           <h2 className="mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] text-ink max-w-xl">
             Built for regulated supply chains.
@@ -39,13 +39,13 @@ export function IndustriesStrip() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-14">
           {ITEMS.map((item, i) => (
             <Reveal key={item.name} delay={i * 0.08}>
-              <div className="relative aspect-[3/4] w-full mb-6 bg-[#f0efe9]">
+              <div className="group relative aspect-[3/4] w-full mb-6 bg-[#f0efe9] overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.name}
                   fill
                   sizes="(min-width: 768px) 33vw, 100vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.06]"
                 />
               </div>
               <div className="flex items-center gap-2.5 mb-1">

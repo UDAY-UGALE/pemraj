@@ -4,7 +4,7 @@ import { company } from "@/content/company";
 
 export function CtaBand() {
   return (
-    <section className="py-20 md:py-28 bg-signal text-white">
+    <section className="py-14 md:py-20 bg-signal text-white">
       <Container>
         <Reveal className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
           <div className="lg:col-span-8">

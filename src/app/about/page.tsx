@@ -43,7 +43,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-14">
             <Reveal className="lg:col-span-5">
@@ -87,7 +87,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-mist">
+      <section className="py-14 md:py-20 bg-mist">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16">
             <Reveal>
@@ -106,10 +106,10 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
           <Reveal>
-            <SectionHeading eyebrow="Values" title="What runs the shop floor." className="mb-16" />
+            <SectionHeading eyebrow="Values" title="What runs the shop floor." className="mb-10" />
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-line">
             {company.values.map((v, i) => (

@@ -37,7 +37,7 @@ export default function QualityPage() {
         intro="Quality checks are built into every step of manufacturing — from procuring raw material to dispatching the final product — not inspected in at the end."
       />
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-14 items-center">
             <Reveal className="lg:col-span-6">
@@ -87,7 +87,7 @@ export default function QualityPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-mist">
+      <section className="py-14 md:py-20 bg-mist">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="Quality Control Documentation" title="Documented at every stage." className="mb-14" />
@@ -104,7 +104,7 @@ export default function QualityPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
           <Reveal>
             <SectionHeading
@@ -137,7 +137,7 @@ export default function QualityPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-mist">
+      <section className="py-14 md:py-20 bg-mist">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="Materials" title="Any material, fully traceable." className="mb-6" />

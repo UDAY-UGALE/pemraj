@@ -23,18 +23,18 @@ export default function CapabilitiesPage() {
         intro="It is rightly said that to get quality output, we need to give a quality input. We invest continuously in machines from Deckel-Maho Gildemeister (Germany), Tsugami (Japan) and LMW (India), with a team trained across both Fanuc and Siemens controllers."
       />
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
-          <div className="flex flex-col gap-24 md:gap-32">
+          <div className="flex flex-col gap-14 md:gap-20">
             {company.capabilities.map((cap, i) => {
               const image = (
-                <div key="image" className="lg:col-span-6 relative aspect-[4/3] w-full">
+                <div key="image" className="group lg:col-span-6 relative aspect-[4/3] w-full overflow-hidden">
                   <Image
                     src={cap.image}
                     alt={cap.name}
                     fill
                     sizes="(min-width: 1024px) 50vw, 100vw"
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.06]"
                   />
                 </div>
               );
@@ -75,13 +75,13 @@ export default function CapabilitiesPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-mist">
+      <section className="py-14 md:py-20 bg-mist">
         <Container>
           <Reveal>
             <SectionHeading
               eyebrow="In-House Capability"
               title="Beyond CNC — the supporting processes."
-              className="mb-16"
+              className="mb-10"
             />
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
@@ -98,7 +98,7 @@ export default function CapabilitiesPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
           <Reveal>
             <SectionHeading
@@ -108,7 +108,7 @@ export default function CapabilitiesPage() {
             />
           </Reveal>
           <Reveal delay={0.05}>
-            <p className="mt-5 text-graphite text-[15px] leading-relaxed max-w-2xl mb-16">
+            <p className="mt-5 text-graphite text-[15px] leading-relaxed max-w-2xl mb-10">
               To meet customer requirements we collaborate with specialist partners —
               every supplier is selected only after thorough evaluation and extensive
               audit.

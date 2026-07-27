@@ -49,18 +49,18 @@ export default function IndustriesPage() {
         intro="Our components go into extremely critical and demanding industries. Our customers — OEMs and lower-tier manufacturers located all around the world — are high-technology businesses operating in dynamic and competitive markets."
       />
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
-          <div className="flex flex-col gap-24 md:gap-32">
+          <div className="flex flex-col gap-14 md:gap-20">
             {SECTORS.map((s, i) => {
               const image = (
-                <div key="image" className="lg:col-span-6 relative aspect-[4/3] w-full bg-white">
+                <div key="image" className="group lg:col-span-6 relative aspect-[4/3] w-full bg-white overflow-hidden">
                   <Image
                     src={s.image}
                     alt={s.name}
                     fill
                     sizes="(min-width: 1024px) 50vw, 100vw"
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.06]"
                   />
                 </div>
               );

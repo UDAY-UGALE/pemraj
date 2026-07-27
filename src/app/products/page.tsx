@@ -18,13 +18,13 @@ function Gallery({ srcs, alt }: { srcs: readonly string[]; alt: string }) {
     <div className={`grid grid-cols-1 ${srcs.length > 1 ? "sm:grid-cols-2" : ""} gap-6`}>
       {srcs.map((src, i) => (
         <Reveal key={src} delay={i * 0.06}>
-          <div className="relative aspect-[4/3] bg-white border border-line">
+          <div className="group relative aspect-[4/3] bg-white border border-line overflow-hidden">
             <Image
               src={src}
               alt={`${alt} ${i + 1}`}
               fill
               sizes="(min-width: 640px) 50vw, 100vw"
-              className="object-cover"
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.06]"
             />
           </div>
         </Reveal>
@@ -42,7 +42,7 @@ export default function ProductsPage() {
         intro="A cross-section of the components we machine — export fittings and assemblies, defence components with full traceability, and precision polygon-turned parts."
       />
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="Export" title="Fittings & assemblies for global OEMs." className="mb-14" />
@@ -51,7 +51,7 @@ export default function ProductsPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-mist">
+      <section className="py-14 md:py-20 bg-mist">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="Defence" title="Full traceability, every batch." className="mb-14" />
@@ -60,7 +60,7 @@ export default function ProductsPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
           <Reveal>
             <SectionHeading

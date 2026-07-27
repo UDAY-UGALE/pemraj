@@ -6,9 +6,9 @@ import { company } from "@/content/company";
 
 export function CapabilitiesGrid() {
   return (
-    <section className="py-24 md:py-32 bg-mist">
+    <section className="py-14 md:py-20 bg-mist">
       <Container>
-        <Reveal className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+        <Reveal className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <div>
             <p className="label text-signal">Capabilities</p>
             <h2 className="mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] text-ink max-w-xl">
@@ -23,13 +23,13 @@ export function CapabilitiesGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
           {company.capabilities.map((cap, i) => (
             <Reveal key={cap.name} delay={i * 0.06}>
-              <div className="relative aspect-[4/3] w-full mb-6">
+              <div className="group relative aspect-[4/3] w-full mb-6 overflow-hidden">
                 <Image
                   src={cap.image}
                   alt={cap.name}
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.06]"
                 />
               </div>
               <h3 className="font-display font-semibold text-xl text-ink">{cap.name}</h3>

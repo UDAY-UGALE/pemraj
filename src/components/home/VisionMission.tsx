@@ -4,7 +4,7 @@ import { company } from "@/content/company";
 
 export function VisionMission() {
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section className="py-14 md:py-20 bg-white">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
           <Reveal>

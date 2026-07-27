@@ -15,7 +15,7 @@ export default function ContactPage() {
     <>
       <PageHeader eyebrow="Contact" title="Contact Us" intro="Reach our team directly." />
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
           <p className="label text-graphite mb-8">Direct contacts</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-10">
@@ -34,7 +34,7 @@ export default function ContactPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-mist">
+      <section className="py-14 md:py-20 bg-mist">
         <Container>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
             {Object.values(company.offices).map((office) => (

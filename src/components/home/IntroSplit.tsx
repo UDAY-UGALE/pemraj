@@ -5,7 +5,7 @@ import { Reveal } from "../Reveal";
 
 export function IntroSplit() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-14 md:py-20">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-14">
           <Reveal className="lg:col-span-4">

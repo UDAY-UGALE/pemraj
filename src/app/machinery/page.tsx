@@ -23,7 +23,7 @@ export default function MachineryPage() {
         intro="Most of our CNC machines carry a programmable tailstock and an 8–12 station bi-directional turret, running a mix of Fanuc and Siemens controllers — our team is trained to program both."
       />
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <Container>
           <div className="flex flex-col gap-px bg-line">
             {company.flagshipMachines.map((m, i) => (
@@ -64,7 +64,7 @@ export default function MachineryPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-mist">
+      <section className="py-14 md:py-20 bg-mist">
         <Container>
           <Reveal>
             <SectionHeading

@@ -13,7 +13,7 @@ export function PageHeader({
   children?: ReactNode;
 }) {
   return (
-    <section className="pt-20 pb-16 md:pt-28 md:pb-20 border-b border-line">
+    <section className="pt-14 pb-10 md:pt-20 md:pb-14 border-b border-line">
       <Container>
         <p className="label text-signal">{eyebrow}</p>
         <h1 className="mt-5 font-display font-semibold text-5xl md:text-[4.25rem] leading-[1.0] text-ink max-w-3xl">
