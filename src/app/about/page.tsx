@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/Container";
-import { PageHeader } from "@/components/PageHeader";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
 import { CtaBand } from "@/components/home/CtaBand";
@@ -16,11 +15,33 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <PageHeader
-        eyebrow="About Pemraj"
-        title="A strategic manufacturer, not a job shop."
-        intro="Established in 1983, Pemraj Industries is a strategic manufacturer and supplier of high precision and quality critical CNC machined components and assemblies, specialising in CNC turning and CNC turn-mill — based in the industrial belt of Pune, India."
-      />
+      <section className="relative overflow-hidden bg-navy-deep text-white">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/factory-exterior.jpg"
+            alt="Pemraj Industries works, Vadgaon Dhayari, Pune"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[78%_center]"
+          />
+          <div className="absolute inset-0 bg-navy-deep/65" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/20 to-navy-deep/50" />
+        </div>
+
+        <Container className="relative pt-20 pb-16 md:pt-28 md:pb-20">
+          <p className="label text-white/60">About Pemraj</p>
+          <h1 className="mt-5 font-display font-semibold text-5xl md:text-[4.25rem] leading-[1.0] max-w-3xl">
+            A strategic manufacturer, not a job shop.
+          </h1>
+          <p className="mt-7 text-white/75 text-[17px] leading-relaxed max-w-xl">
+            Established in 1983, Pemraj Industries is a strategic manufacturer and
+            supplier of high precision and quality critical CNC machined components
+            and assemblies, specialising in CNC turning and CNC turn-mill — based in
+            the industrial belt of Pune, India.
+          </p>
+        </Container>
+      </section>
 
       <section className="py-20 md:py-28">
         <Container>
@@ -28,8 +49,8 @@ export default function AboutPage() {
             <Reveal className="lg:col-span-5">
               <div className="relative aspect-[4/5] w-full">
                 <Image
-                  src="/images/factory-exterior.jpg"
-                  alt="Pemraj Industries works, Vadgaon Dhayari, Pune"
+                  src="/images/machine-nt-flex-detail.jpg"
+                  alt="Nakamura-Tome NT-Flex turn-mill centre in operation"
                   fill
                   sizes="(min-width: 1024px) 40vw, 100vw"
                   className="object-cover"

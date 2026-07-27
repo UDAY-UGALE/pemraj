@@ -213,12 +213,12 @@ export const company = {
   ],
 
   inHouse: [
-    { name: "Automatic Lathe (Traub)", detail: "Models PMT A25 & A32 · 32mm round bar capacity · 70mm max turning length · 8 machines" },
-    { name: "Lathe", detail: "177mm centre height · 335mm swing over bed · 4 machines" },
-    { name: "Thread Rolling", detail: "50mm max job diameter · 12 tonnes max rolling thrust · 1 machine" },
-    { name: "Radial Drilling", detail: "25mm drilling capacity · 610×940mm table · 10 machines" },
-    { name: "Bandsaw Cutting", detail: "Horizontal semi-automatic · up to 200mm cutting capacity · 1 machine" },
-    { name: "Milling", detail: "900×200mm table · 150mm cross traverse · 2 machines" },
+    { name: "Automatic Lathe (Traub)", detail: "Models PMT A25 & A32 · 32mm round bar capacity · 70mm max turning length · 8 machines", icon: "/images/icons/inhouse-automatic-lathe.png" },
+    { name: "Lathe", detail: "177mm centre height · 335mm swing over bed · 4 machines", icon: "/images/icons/inhouse-lathe.png" },
+    { name: "Thread Rolling", detail: "50mm max job diameter · 12 tonnes max rolling thrust · 1 machine", icon: "/images/icons/inhouse-thread-rolling.png" },
+    { name: "Radial Drilling", detail: "25mm drilling capacity · 610×940mm table · 10 machines", icon: "/images/icons/inhouse-radial-drilling.png" },
+    { name: "Bandsaw Cutting", detail: "Horizontal semi-automatic · up to 200mm cutting capacity · 1 machine", icon: "/images/icons/inhouse-bandsaw.png" },
+    { name: "Milling", detail: "900×200mm table · 150mm cross traverse · 2 machines", icon: "/images/icons/inhouse-milling.png" },
   ],
 
   outsourced: {

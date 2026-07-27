@@ -87,6 +87,9 @@ export default function CapabilitiesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
             {company.inHouse.map((item, i) => (
               <Reveal key={item.name} delay={i * 0.05} className="bg-white p-8">
+                <div className="relative w-14 h-14 mb-5">
+                  <Image src={item.icon} alt="" fill className="object-contain" />
+                </div>
                 <h3 className="font-display font-semibold text-lg text-ink">{item.name}</h3>
                 <p className="mt-2.5 text-graphite text-[14px] leading-relaxed">{item.detail}</p>
               </Reveal>

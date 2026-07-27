@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  /* Ink & paper — warm, not clinical white/black */
-  --color-paper: #f6f4ef;
+  /* clean, bright base — no more muted beige/grey */
+  --color-paper: #ffffff;
   --color-white: #ffffff;
-  --color-mist: #eef2f6;
+  --color-mist: #e5f0fd;
   --color-ink: #12151a;
   --color-navy: #0c3049;
   --color-navy-deep: #062430;
   --color-graphite: #565c63;
   --color-steel: #8b9199;
-  --color-line: #dcd8cd;
+  --color-line: #d8e3ef;
   --color-line-dark: #24314a;
 
-  /* brand blue, sampled directly from the Pemraj wordmark */
+  /* brand blue, sampled directly from the Pemraj wordmark — used boldly, not just as an accent line */
   --color-signal: #0864a9;
   --color-signal-bright: #2f86d6;
 
-  /* warm accent — antique brass, echoes the brass components we actually machine */
-  --color-gold: #a9762c;
-  --color-gold-deep: #8a5f1f;
+  /* warm gold accent — brighter and more saturated than a muted brass */
+  --color-gold: #c4841f;
+  --color-gold-deep: #9c6714;
 
   --font-display: var(--font-dm-sans);
   --font-body: var(--font-dm-sans);

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Container } from "./Container";
 import { Logo } from "./Logo";
-import { TrustBadges } from "./TrustBadges";
 import { company } from "@/content/company";
 
 const COLUMNS = [
@@ -27,7 +26,7 @@ const COLUMNS = [
 
 export function Footer() {
   return (
-    <footer className="bg-navy text-white/85 mt-32">
+    <footer className="bg-navy text-white/85">
       <Container className="py-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr_1fr_1fr] gap-14 lg:gap-8">
           <div>
@@ -67,11 +66,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/10">
-          <TrustBadges dark />
-        </div>
-
-        <div className="mt-8 pt-8 border-t border-white/10 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
           <p className="label text-white/40">
             © {new Date().getFullYear()} Pemraj Industries — precision CNC manufacturing since 1983
           </p>

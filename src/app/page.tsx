@@ -5,7 +5,7 @@ import { CapabilitiesGrid } from "@/components/home/CapabilitiesGrid";
 import { MachineryShowcase } from "@/components/home/MachineryShowcase";
 import { IndustriesStrip } from "@/components/home/IndustriesStrip";
 import { QualityStrip } from "@/components/home/QualityStrip";
-import { CtaBand } from "@/components/home/CtaBand";
+// import { CtaBand } from "@/components/home/CtaBand";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <MachineryShowcase />
       <IndustriesStrip />
       <QualityStrip />
-      <CtaBand />
+      {/* <CtaBand /> */}
     </>
   );
 }

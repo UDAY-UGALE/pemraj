@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
 import { Reveal } from "@/components/Reveal";
-import { ContactForm } from "@/components/ContactForm";
 import { company } from "@/content/company";
 
 export const metadata: Metadata = {
@@ -14,35 +13,23 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <PageHeader
-        eyebrow="Contact"
-        title="Contact Us"
-        intro="Reach our team directly, or send us your enquiry below."
-      />
+      <PageHeader eyebrow="Contact" title="Contact Us" intro="Reach our team directly." />
 
       <section className="py-20 md:py-28">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-            <Reveal className="lg:col-span-7">
-              <ContactForm />
-            </Reveal>
-
-            <Reveal delay={0.08} className="lg:col-span-4 lg:col-start-9">
-              <p className="label text-graphite mb-6">Direct contacts</p>
-              <div className="flex flex-col gap-8">
-                {company.contacts.map((c) => (
-                  <div key={c.name} className="border-t border-line pt-5">
-                    <p className="font-display font-semibold text-lg text-ink">{c.name}</p>
-                    <a href={`tel:${c.phone}`} className="mt-1.5 block text-graphite text-[14px] tnum hover:text-ink">
-                      {c.phone}
-                    </a>
-                    <a href={`mailto:${c.email}`} className="block text-graphite text-[14px] hover:text-ink">
-                      {c.email}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </Reveal>
+          <p className="label text-graphite mb-8">Direct contacts</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-10">
+            {company.contacts.map((c) => (
+              <Reveal key={c.name} className="border-t border-line pt-5">
+                <p className="font-display font-semibold text-lg text-ink">{c.name}</p>
+                <a href={`tel:${c.phone}`} className="mt-1.5 block text-graphite text-[14px] tnum hover:text-ink">
+                  {c.phone}
+                </a>
+                <a href={`mailto:${c.email}`} className="block text-graphite text-[14px] hover:text-ink">
+                  {c.email}
+                </a>
+              </Reveal>
+            ))}
           </div>
         </Container>
       </section>

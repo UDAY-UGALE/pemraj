@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Container } from "../Container";
-import { TrustBadges } from "../TrustBadges";
 import { IconCalendar, IconGear, IconTarget, IconShield } from "../icons";
 import { company } from "@/content/company";
 
@@ -34,14 +32,6 @@ export function Hero() {
           and electronics manufacturers worldwide.
         </p>
 
-        <div className="mt-9 flex flex-wrap justify-center gap-4">
-          <Link
-            href="/capabilities"
-            className="inline-flex items-center gap-2 rounded-full bg-signal text-white px-7 py-3.5 label hover:bg-signal-bright transition-colors"
-          >
-            See Capabilities
-          </Link>
-        </div>
       </Container>
 
       <Container className="relative pb-10">
@@ -61,10 +51,6 @@ export function Hero() {
             );
           })}
         </div>
-      </Container>
-
-      <Container className="relative pb-8 flex justify-center">
-        <TrustBadges dark />
       </Container>
     </section>
   );
