@@ -29,14 +29,23 @@ export const company = {
     { name: "Rahul Dhore", phone: "+91-9850424242", email: "rahul@pemraj.com" },
   ],
 
-  founder: {
-    name: "Pradeep Dhore",
-    title: "Founder",
-    phone: "+91-9822007645",
-    email: "pnd@pemraj.com",
-    // photo added when supplied — see src/app/leadership/page.tsx
-    bio: "Pradeep Dhore founded Pemraj Industries in 1983, building it from Pune's industrial belt into a strategic manufacturer of high-precision CNC machined components — today an ISO 9001:2015 certified supplier to automotive, defence, hydraulics and electronics customers worldwide.",
-  },
+  // photos added when supplied — see src/app/leadership/page.tsx
+  leadership: [
+    {
+      name: "Pradeep Dhore",
+      title: "Founder",
+      phone: "+91-9822007645",
+      email: "pnd@pemraj.com",
+      bio: "Pradeep Dhore founded Pemraj Industries in 1983, building it from Pune's industrial belt into a strategic manufacturer of high-precision CNC machined components — today an ISO 9001:2015 certified supplier to automotive, defence, hydraulics and electronics customers worldwide.",
+    },
+    {
+      name: "Rahul Dhore",
+      title: "Son of Founder Pradeep Dhore",
+      phone: "+91-9850424242",
+      email: "rahul@pemraj.com",
+      bio: "Rahul Dhore is part of the second generation carrying Pemraj Industries forward, and is a direct point of contact for customer enquiries.",
+    },
+  ],
 
   legal: {
     gst: "27AAOPD8572G1ZD",

@@ -1,5 +1,6 @@
 import { Hero } from "@/components/home/Hero";
 import { IntroSplit } from "@/components/home/IntroSplit";
+import { VisionMission } from "@/components/home/VisionMission";
 import { CapabilitiesGrid } from "@/components/home/CapabilitiesGrid";
 import { MachineryShowcase } from "@/components/home/MachineryShowcase";
 import { IndustriesStrip } from "@/components/home/IndustriesStrip";
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <IntroSplit />
+      <VisionMission />
       <CapabilitiesGrid />
       <MachineryShowcase />
       <IndustriesStrip />

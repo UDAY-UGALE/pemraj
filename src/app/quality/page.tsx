@@ -42,7 +42,7 @@ export default function QualityPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-14 items-center">
             <Reveal className="lg:col-span-6">
               <p className="label text-signal">Certification</p>
-              <h2 className="mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] tracking-[-0.01em] text-ink">
+              <h2 className="mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] text-ink">
                 {company.certification.standard}
               </h2>
               <p className="mt-6 text-graphite text-[15px] leading-relaxed max-w-md">

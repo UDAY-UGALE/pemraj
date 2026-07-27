@@ -21,9 +21,8 @@
   --color-gold: #a9762c;
   --color-gold-deep: #8a5f1f;
 
-  --font-display: var(--font-archivo);
-  --font-body: var(--font-archivo);
-  --font-mono: var(--font-plex-mono);
+  --font-display: var(--font-dm-sans);
+  --font-body: var(--font-dm-sans);
 }
 
 @theme inline {
@@ -44,7 +43,6 @@
 
   --font-display: var(--font-display);
   --font-body: var(--font-body);
-  --font-mono: var(--font-mono);
 }
 
 * {
@@ -82,8 +80,9 @@ body {
 }
 
 .label {
-  font-family: var(--font-mono), ui-monospace, monospace;
-  letter-spacing: 0.14em;
+  font-family: var(--font-body), ui-sans-serif, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 0.72rem;
+  font-size: 0.76rem;
 }

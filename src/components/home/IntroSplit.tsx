@@ -10,7 +10,7 @@ export function IntroSplit() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-14">
           <Reveal className="lg:col-span-4">
             <p className="label text-signal">About Pemraj</p>
-            <h2 className="mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] tracking-[-0.01em] text-ink">
+            <h2 className="mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] text-ink">
               Strategic manufacturer, not a job shop.
             </h2>
             <p className="mt-6 text-graphite text-[15px] leading-relaxed">

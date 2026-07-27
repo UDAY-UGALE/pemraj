@@ -12,7 +12,7 @@ export function MachineryShowcase() {
         <Reveal className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
             <p className="label text-signal">Machinery</p>
-            <h2 className="mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] tracking-[-0.01em] text-ink max-w-2xl">
+            <h2 className="mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] text-ink max-w-2xl">
               Japanese and Swiss iron on the shop floor.
             </h2>
           </div>

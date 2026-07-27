@@ -1,20 +1,14 @@
 import type { Metadata } from "next";
-import { Archivo, IBM_Plex_Mono } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
+// import { TopBar } from "@/components/TopBar";
 
-const archivo = Archivo({
-  variable: "--font-archivo",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
-  display: "swap",
-});
-
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
-  subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -42,12 +36,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${archivo.variable} ${plexMono.variable} h-full`}>
+    <html lang="en" className={`${dmSans.variable} h-full`}>
       <body className="min-h-full flex flex-col bg-paper">
+        {/* <TopBar /> */}
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
-        <FloatingContact />
       </body>
     </html>
   );

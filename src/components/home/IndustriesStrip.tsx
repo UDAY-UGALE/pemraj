@@ -2,22 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "../Container";
 import { Reveal } from "../Reveal";
+import { IconShield, IconDroplet, IconBolt } from "../icons";
 
 const ITEMS = [
   {
     name: "Defence",
     body: "End-to-end traceability and 100% conformance on critical parameters, audited by our defence customers before every tender.",
     image: "/images/defence-components-1.jpg",
+    Icon: IconShield,
   },
   {
     name: "Export & Hydraulics",
     body: "Steel, brass and stainless fittings and assemblies shipped to OEMs and lower-tier manufacturers worldwide.",
     image: "/images/export-components-2.jpg",
+    Icon: IconDroplet,
   },
   {
     name: "Automotive & Electronics",
     body: "High-volume turned components to IATF-grade documentation — APQP, control plans and PFMEA on every part family.",
     image: "/images/polygon-turning-2.jpg",
+    Icon: IconBolt,
   },
 ];
 
@@ -27,7 +31,7 @@ export function IndustriesStrip() {
       <Container>
         <Reveal className="mb-16">
           <p className="label text-signal">Industries</p>
-          <h2 className="mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] tracking-[-0.01em] text-ink max-w-xl">
+          <h2 className="mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] text-ink max-w-xl">
             Built for regulated supply chains.
           </h2>
         </Reveal>
@@ -44,7 +48,10 @@ export function IndustriesStrip() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="font-display font-semibold text-xl text-ink">{item.name}</h3>
+              <div className="flex items-center gap-2.5 mb-1">
+                <item.Icon className="text-signal" />
+                <h3 className="font-display font-semibold text-xl text-ink">{item.name}</h3>
+              </div>
               <p className="mt-2.5 text-graphite text-[15px] leading-relaxed">{item.body}</p>
             </Reveal>
           ))}

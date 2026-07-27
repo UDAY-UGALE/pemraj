@@ -16,8 +16,8 @@ export default function ContactPage() {
     <>
       <PageHeader
         eyebrow="Contact"
-        title="Send us a drawing."
-        intro="Tell us the material, quantity and tolerance and we'll come back with a quote — or reach our team directly below."
+        title="Contact Us"
+        intro="Reach our team directly, or send us your enquiry below."
       />
 
       <section className="py-20 md:py-28">

@@ -18,7 +18,7 @@ export function SectionHeading({
       <div>
         <p className={`label ${dark ? "text-white/50" : "text-signal"}`}>{eyebrow}</p>
         <h2
-          className={`mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] tracking-[-0.01em] max-w-2xl ${
+          className={`mt-5 font-display font-semibold text-4xl md:text-[2.75rem] leading-[1.05] max-w-2xl ${
             dark ? "text-white" : "text-ink"
           }`}
         >

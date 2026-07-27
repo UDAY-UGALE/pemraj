@@ -2,7 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "../Container";
 import { TrustBadges } from "../TrustBadges";
+import { IconCalendar, IconGear, IconTarget, IconShield } from "../icons";
 import { company } from "@/content/company";
+
+const STAT_ICONS = [IconCalendar, IconGear, IconTarget, IconShield];
 
 export function Hero() {
   return (
@@ -21,18 +24,14 @@ export function Hero() {
       </div>
 
       <Container className="relative pt-28 pb-16 md:pt-36 md:pb-20 flex flex-col items-center text-center">
-        <p className="label text-white/60">
-          Precision CNC Manufacturing &nbsp;·&nbsp; Est. {company.founded} &nbsp;·&nbsp; Pune, India
-        </p>
-
-        <h1 className="mt-7 font-display font-semibold text-[13vw] leading-[0.95] tracking-[-0.02em] sm:text-[7vw] lg:text-[5.75rem] max-w-4xl">
+        <h1 className="font-display font-semibold text-[13vw] leading-[0.95] sm:text-[7vw] lg:text-[5.75rem] max-w-4xl">
           Engineering precision since 1983.
         </h1>
 
         <p className="mt-7 max-w-xl text-white/75 text-[16px] leading-relaxed">
-          Forty-two years of CNC turning, Swiss turning and turn-mill work for
-          automotive, defence, hydraulics and electronics manufacturers — out of
-          our own works on Sinhagad Road, Pune.
+          Four decades of CNC turning, Swiss turning and turn-mill expertise,
+          delivering precision components to automotive, defence, hydraulics
+          and electronics manufacturers worldwide.
         </p>
 
         <div className="mt-9 flex flex-wrap justify-center gap-4">
@@ -42,25 +41,25 @@ export function Hero() {
           >
             See Capabilities
           </Link>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 rounded-full border border-white/40 text-white px-7 py-3.5 label hover:bg-white/10 transition-colors"
-          >
-            Get a Quote
-          </Link>
         </div>
       </Container>
 
       <Container className="relative pb-10">
-        <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 border-t border-white/15 pt-8">
-          {company.stats.map((s) => (
-            <div key={s.label} className="flex items-baseline gap-2">
-              <span className="tnum font-display text-2xl md:text-3xl font-semibold">
-                {s.value}
-              </span>
-              <span className="label text-white/50">{s.label}</span>
-            </div>
-          ))}
+        <div className="flex flex-wrap justify-center gap-x-12 gap-y-5 border-t border-white/15 pt-8">
+          {company.stats.map((s, i) => {
+            const Icon = STAT_ICONS[i];
+            return (
+              <div key={s.label} className="flex items-center gap-3">
+                <Icon className="text-gold shrink-0" />
+                <div className="flex items-baseline gap-2">
+                  <span className="tnum font-display text-2xl md:text-3xl font-semibold">
+                    {s.value}
+                  </span>
+                  <span className="label text-white/50">{s.label}</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </Container>
 
