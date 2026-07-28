@@ -22,16 +22,17 @@ export function Hero() {
       </div>
 
       <Container className="relative pt-28 pb-16 md:pt-36 md:pb-20 flex flex-col items-center text-center">
-        <h1 className="font-display font-semibold text-[13vw] leading-[0.95] sm:text-[7vw] lg:text-[5.75rem] max-w-4xl">
-          Engineering precision since 1983.
+        <h1 className="font-display font-semibold text-[15vw] leading-[0.95] sm:text-[7vw] lg:text-[5.75rem] max-w-5xl">
+          Engineering Excellence Since 1983.
         </h1>
 
-        <p className="mt-7 max-w-xl text-white/75 text-[16px] leading-relaxed">
-          Four decades of CNC turning, Swiss turning and turn-mill expertise,
-          delivering precision components to automotive, defence, hydraulics
-          and electronics manufacturers worldwide.
-        </p>
-
+      <p className="mt-7 max-w-10xl text-white/75 text-[20px] leading-relaxed">
+        For over 40 years, Pemraj Industries has been delivering high-precision
+        CNC machined components with uncompromising quality and reliability.
+        Combining advanced manufacturing technology with decades of engineering
+        expertise, we serve industries that demand precision, consistency, and performance.
+        From prototype development to high-volume production, we are your trusted manufacturing partner.
+    </p>
       </Container>
 
       <Container className="relative pb-10">

@@ -32,7 +32,7 @@ export default function AboutPage() {
         <Container className="relative pt-20 pb-16 md:pt-28 md:pb-20">
           <p className="label text-white/60">About Pemraj</p>
           <h1 className="mt-5 font-display font-semibold text-5xl md:text-[4.25rem] leading-[1.0] max-w-3xl">
-            A strategic manufacturer, not a job shop.
+            A strategic manufacturer, for your precision part
           </h1>
           <p className="mt-7 text-white/75 text-[17px] leading-relaxed max-w-xl">
             Established in 1983, Pemraj Industries is a strategic manufacturer and

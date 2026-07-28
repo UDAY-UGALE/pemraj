@@ -5,7 +5,7 @@ export const company = {
   name: "Pemraj Industries",
   founded: 1983,
   location: "Pune, Maharashtra, India",
-  tagline: "Precision CNC components, made in Pune since 1983.",
+  tagline: "Strategic Manufacturer for your Precision Parts, since 1983.",
 
   offices: {
     head: {
@@ -71,7 +71,7 @@ export const company = {
 
   stats: [
     { value: "1983", label: "Founded" },
-    { value: "20", label: "CNC Machines" },
+    // { value: "20", label: "CNC Machines" },
     { value: "10μ", label: "Typical Accuracy" },
     { value: "ISO 9001", label: "Certified since 2019" },
   ],

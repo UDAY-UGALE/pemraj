@@ -52,7 +52,7 @@ export function Footer() {
           ))}
 
           <div>
-            <div className="label text-white/45">Work Office</div>
+            <div className="label text-white/45">Work Office / Factory</div>
             <p className="mt-5 text-[15px] text-white/80 leading-relaxed">
               {company.offices.work.lines.join(", ")}
             </p>

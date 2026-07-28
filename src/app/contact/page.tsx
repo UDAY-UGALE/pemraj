@@ -13,7 +13,11 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      {/* <PageHeader eyebrow="Contact" title="Contact Us" intro="Reach our team directly." /> */}
+      <PageHeader 
+      eyebrow="Contact"
+      title="Contact Us" 
+      // intro="Reach our team directly." 
+      />
 
       <section className="py-14 md:py-20">
         <Container>
