@@ -29,7 +29,9 @@ export const company = {
     { name: "Rahul Dhore", phone: "+91-9850424242", email: "rahul@pemraj.com" },
   ],
 
-  // photos added when supplied — see src/app/leadership/page.tsx
+  // NOTE: "photo" below is a placeholder (AI-generated, not a real photograph)
+  // used at the client's explicit request until real portraits are supplied —
+  // swap both to real photos as soon as they're available.
   leadership: [
     {
       name: "Pradeep Dhore",
@@ -37,13 +39,15 @@ export const company = {
       phone: "+91-9822007645",
       email: "pnd@pemraj.com",
       bio: "Pradeep Dhore founded Pemraj Industries in 1983, building it from Pune's industrial belt into a strategic manufacturer of high-precision CNC machined components — today an ISO 9001:2015 certified supplier to automotive, defence, hydraulics and electronics customers worldwide.",
+      photo: "/images/leadership-placeholder.jpg",
     },
     {
       name: "Rahul Dhore",
-      title: "Son of Founder Pradeep Dhore",
+      title: "CEO",
       phone: "+91-9850424242",
       email: "rahul@pemraj.com",
       bio: "Rahul Dhore is part of the second generation carrying Pemraj Industries forward, and is a direct point of contact for customer enquiries.",
+      photo: "/images/leadership-placeholder.jpg",
     },
   ],
 
@@ -229,11 +233,11 @@ export const company = {
   },
 
   measuringEquipment: [
-    { name: "Form Measuring Machine", make: "Mahr (MarForm MMQ-150)", detail: "Roundness / cylindricity measurement, 0.02µm accuracy" },
-    { name: "Video Measuring Machine", make: "Carmar", detail: "260×160mm, 3µm accuracy, CCD camera with CAD output" },
-    { name: "Profile Projector", make: "Mitoya (India)", detail: "300mm screen, up to 100x magnification" },
-    { name: "Surface Roughness Tester", make: "Mitutoyo (Japan) SJ-201", detail: "Portable, detachable probe" },
-    { name: "Trimos 2D Height Gauge", make: "Trimos (Switzerland)", detail: "406mm measuring speed, 3 micron repeatability" },
+    { name: "Form Measuring Machine", make: "Mahr (MarForm MMQ-150)", detail: "Roundness / cylindricity measurement, 0.02µm accuracy", image: "/images/measure-form.jpg" },
+    { name: "Video Measuring Machine", make: "Carmar", detail: "260×160mm, 3µm accuracy, CCD camera with CAD output", image: "/images/measure-video.jpg" },
+    { name: "Profile Projector", make: "Mitoya (India)", detail: "300mm screen, up to 100x magnification", image: "/images/measure-profile-projector.jpg" },
+    { name: "Surface Roughness Tester", make: "Mitutoyo (Japan) SJ-201", detail: "Portable, detachable probe", image: "/images/measure-roughness.jpg" },
+    { name: "Trimos 2D Height Gauge", make: "Trimos (Switzerland)", detail: "406mm measuring speed, 3 micron repeatability", image: "/images/measure-height-gauge.jpg" },
   ],
 
   qualityDocs: [

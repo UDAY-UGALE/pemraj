@@ -13,20 +13,20 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <PageHeader eyebrow="Contact" title="Contact Us" intro="Reach our team directly." />
+      {/* <PageHeader eyebrow="Contact" title="Contact Us" intro="Reach our team directly." /> */}
 
       <section className="py-14 md:py-20">
         <Container>
-          <p className="label text-graphite mb-8">Direct contacts</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-10">
-            {company.contacts.map((c) => (
-              <Reveal key={c.name} className="border-t border-line pt-5">
-                <p className="font-display font-semibold text-lg text-ink">{c.name}</p>
-                <a href={`tel:${c.phone}`} className="mt-1.5 block text-graphite text-[14px] tnum hover:text-ink">
-                  {c.phone}
+            {company.leadership.map((p) => (
+              <Reveal key={p.name} className="border-t border-line pt-5">
+                <p className="font-display font-semibold text-lg text-ink">{p.name}</p>
+                <p className="label text-signal mt-1">{p.title}</p>
+                <a href={`tel:${p.phone}`} className="mt-2.5 block text-graphite text-[14px] tnum hover:text-ink">
+                  {p.phone}
                 </a>
-                <a href={`mailto:${c.email}`} className="block text-graphite text-[14px] hover:text-ink">
-                  {c.email}
+                <a href={`mailto:${p.email}`} className="block text-graphite text-[14px] hover:text-ink">
+                  {p.email}
                 </a>
               </Reveal>
             ))}

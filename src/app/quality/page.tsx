@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
-import { CtaBand } from "@/components/home/CtaBand";
+// import { CtaBand } from "@/components/home/CtaBand";
 import { company, images } from "@/content/company";
 
 export const metadata: Metadata = {
@@ -115,7 +115,16 @@ export default function QualityPage() {
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {company.measuringEquipment.map((eq, i) => (
-              <Reveal key={eq.name} delay={i * 0.06} className="border-t border-line pt-6">
+              <Reveal key={eq.name} delay={i * 0.06}>
+                <div className="group relative aspect-[4/3] w-full mb-5 bg-white border border-line overflow-hidden">
+                  <Image
+                    src={eq.image}
+                    alt={eq.name}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 100vw"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.06]"
+                  />
+                </div>
                 <h3 className="font-display font-semibold text-lg text-ink">{eq.name}</h3>
                 <p className="mt-1.5 label text-graphite">{eq.make}</p>
                 <p className="mt-3 text-graphite text-[14px] leading-relaxed">{eq.detail}</p>
@@ -165,7 +174,7 @@ export default function QualityPage() {
         </Container>
       </section>
 
-      <CtaBand />
+      {/* <CtaBand /> */}
     </>
   );
 }

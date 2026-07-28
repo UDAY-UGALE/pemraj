@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
 import { SpecTable } from "@/components/SpecTable";
-import { CtaBand } from "@/components/home/CtaBand";
+// import { CtaBand } from "@/components/home/CtaBand";
 import { company, images } from "@/content/company";
 
 export const metadata: Metadata = {
@@ -123,7 +123,7 @@ export default function MachineryPage() {
         </Container>
       </section>
 
-      <CtaBand />
+      {/* <CtaBand /> */}
     </>
   );
 }

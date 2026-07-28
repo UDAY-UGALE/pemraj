@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
 import { Reveal } from "@/components/Reveal";
-import { CtaBand } from "@/components/home/CtaBand";
+// import { CtaBand } from "@/components/home/CtaBand";
 import { company } from "@/content/company";
 
 export const metadata: Metadata = {
@@ -19,10 +20,6 @@ export default function LeadershipPage() {
         <Container>
           <div className="flex flex-col gap-20">
             {company.leadership.map((person, i) => {
-              const initials = person.name
-                .split(" ")
-                .map((w) => w[0])
-                .join("");
               return (
                 <Reveal
                   key={person.name}
@@ -30,12 +27,18 @@ export default function LeadershipPage() {
                   className="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-10 items-start"
                 >
                   <div className="lg:col-span-4">
-                    {/* Photo slot — replace with next/image once a portrait is supplied */}
-                    <div className="aspect-[4/5] w-full bg-navy flex items-center justify-center">
-                      <span className="font-display font-semibold text-6xl text-white/25 tracking-wide">
-                        {initials}
-                      </span>
+                    <div className="relative aspect-[4/5] w-full bg-navy">
+                      <Image
+                        src={person.photo}
+                        alt={person.name}
+                        fill
+                        sizes="(min-width: 1024px) 30vw, 100vw"
+                        className="object-cover"
+                      />
                     </div>
+                    <p className="mt-2 text-[12px] text-steel italic">
+                      Placeholder image — to be replaced with a real photo.
+                    </p>
                   </div>
 
                   <div className="lg:col-span-7 lg:col-start-6">
@@ -96,7 +99,7 @@ export default function LeadershipPage() {
         </Container>
       </section>
 
-      <CtaBand />
+      {/* <CtaBand /> */}
     </>
   );
 }

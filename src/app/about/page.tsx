@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
-import { CtaBand } from "@/components/home/CtaBand";
+// import { CtaBand } from "@/components/home/CtaBand";
 import { company } from "@/content/company";
 
 export const metadata: Metadata = {
@@ -123,7 +123,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <CtaBand />
+      {/* <CtaBand /> */}
     </>
   );
 }
